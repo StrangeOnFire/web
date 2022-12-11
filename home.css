@@ -169,9 +169,16 @@ hr{
     color: aqua;
 }
 
-.address h1{
+.author{
+    display: flex;
+    justify-content: center;
+}
+
+.authorname{
     font-family: 'Sacramento' ;
     letter-spacing: 0.25rem;
     font-size: 3rem;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
 }
