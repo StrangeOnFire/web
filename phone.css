@@ -1,5 +1,5 @@
 #main-h2{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .intro h1{
@@ -8,6 +8,7 @@
 .intro p{
     font-size: 1.5rem;
 }
+
 
 
 .item-des{
@@ -23,9 +24,16 @@
     margin-top: 2%;
 }
 
-.address h1{
+.author{
+   flex-direction: column;
+   
+}
+
+
+.authorname{
     font-size: 2.5rem;
 }
+
 
 
 
