@@ -1,0 +1,416 @@
+
+body,
+html{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+svg {
+      display: block;
+      width: 100%;
+      height: 130vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+}
+  
+.scrollElement {
+      position: absolute;
+      height: 9000px;
+     
+      top: 0;
+      z-index: 0;
+      padding: 0;
+      margin: 0;
+}
+
+ 
+
+
+
+/* navbar */
+
+#nav-ul{
+  display: flex;
+  margin: 0;
+  margin-top: .5rem;
+  justify-content: flex-end;
+}
+
+li{
+  margin-right: 3%;
+  list-style: none;
+  
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding-inline: .2rem;
+  border-radius: 25%;
+}
+li a:hover{
+  color: black;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.598);
+}
+a[data-1]{
+  color: brown;
+}
+#bar{
+  display: none;
+}
+.navbar > label {
+  display:none;
+}
+.navbar > label img {
+  width: 2.5rem;
+  position: relative;
+  left: 90%;
+  top: .2rem;
+  z-index: 5;
+}
+@media (max-width : 1100px) {
+  li a {
+    font-size: 2rem;
+  }
+ 
+}
+@media (max-width : 800px) {
+  .navbar > label {
+    display:block;
+  }
+  #nav-ul{
+    flex-direction: column;
+    margin-top: 0;
+    gap: 2rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    padding: 5rem 0 2rem 0;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+  #nav-ul > li{
+    text-align: center;
+    
+  }
+  #nav-ul > li a{
+   font-size: 2.5rem;
+   
+  }
+  #bar:checked ~ ul{
+    right: 0;
+  }
+
+}
+/* top container */
+
+.top-container{
+  margin: 0;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-me > h2{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+.text-me > h1{
+  font-family: 'Patrick Hand', 'serif';
+  font-size: 4.5rem;
+  color: white;
+  align-self: flex-start;
+  line-height: 2rem  ;
+}
+#my-name{
+  color: gold;
+  font-size: 5.5rem;
+  font-family: 'Sacramento' ;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 4px gold;
+}
+#span1{
+  color: rgb(223, 119, 29);
+}
+#span2{
+  color: white;
+  
+}
+#span3{
+  color: green;
+}
+.text-me a{
+  color: aliceblue;  
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: .2rem;
+  padding-inline: .8rem;
+  border-radius: 25px;
+}
+.text-me a:hover{
+  background-color: rgba(255, 255, 255,.8);
+  color: black;
+}
+.img-me > img{
+  border: 4px solid rgb(255, 170, 0);
+  border-radius: 74% 26% 23% 77% / 60% 66% 34% 40% ;
+  box-shadow: 0 0 5px rgb(255, 170, 0);
+}
+@media (max-width:1100px) {
+  .top-container{
+    margin: auto;
+    margin-top: 3%;
+    flex-direction: column;
+  }
+  .text-me > h1{
+    font-size: 6rem;
+  }
+  #my-name{
+    font-size: 7.5rem;
+  }
+  .text-me a{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:800px) {
+  .top-container{
+    padding-left: 3%;
+  }
+  .text-me > h1:nth-child(3){
+    line-height: 6rem;
+      }
+  
+}
+/* about me section */
+.about-section{
+  margin-top: 50vh;
+}
+.about-section > div > h1{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  border-bottom: 2px solid white;
+  max-width: fit-content;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+.about-me{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+.about-img > img{
+  width: 100%;
+  border-radius: 20px;
+}
+.about-text{
+  padding: 0 2rem 2rem 2rem;
+  width: 50%;
+}
+.about-text > h2{
+  color: rgb(0, 140, 255);
+  font-size: 2rem;
+  margin-top: 0;
+  font-family: 'Patrick Hand', 'serif';
+  letter-spacing: .2rem;
+}
+.about-text > p{
+  color: brown;
+  font-size: 1.4rem;
+  font-family: 'Roboto', 'serif';
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+.about-section > h4{
+  font-size: 4rem;
+  font-family: 'Patrick Hand', 'serif';
+  letter-spacing: .1rem;
+  color: gold;
+  height: 10vh;
+  margin-left: 10%;
+}
+.about-section > h4 img {
+  height: 15vh;
+}
+@media (max-width:1100px) {
+  .about-me{
+    flex-direction: column;
+  }
+  .about-text{
+    width: 100%;
+  }
+  .about-text > h2{
+    font-size: 3rem;
+  }
+  .about-text > p{
+    font-size: 2rem;
+  }
+  .about-text > h4{
+    font-size: 2rem;
+    width: 90%;
+  }
+  .about-section > h4 img {
+    height: 10vh;
+    margin-inline: 0;
+  }
+}
+
+/* projects section */
+
+#projects{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+#projects > h1{
+  color: blue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+}
+#projects > h2{
+  color: gold;
+  font-size: 3.5rem;
+  font-family: 'Patrick Hand', 'serif';
+}
+.sample-projects{
+  width: 80%;
+  margin: auto;
+}
+.sample{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15vh;
+  padding-bottom: 5vh;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.473);
+}
+.sample:last-child{
+  border-bottom: 0;
+}
+.sample-img{
+  width: 40%;
+}
+.sample-img > img{
+  width: 100%;
+  border-radius: 20px;
+}
+.sample-text{
+  width: 40%;
+}
+.sample-text > h2{
+  color: cyan;
+  font-size: 3rem;
+  margin: 0;
+}
+.sample-text > p{
+  color: white;
+  font-size: 2rem;
+}
+.sample-text > a{
+  border: 2px solid white;
+  color: blue;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  padding: .2rem 1rem .2rem 1rem;
+  
+}
+.sample-text > a:hover{
+  border: 2px solid blue;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.349);
+}
+@media (max-width:1100px) {
+  .sample{
+    flex-direction: column;
+  }
+  .sample-img{
+    width: 80%;
+  }
+  .sample-text{
+    width: 95%;
+  }
+  
+}
+/* contact section  */
+
+#contact{
+  margin: auto;
+  width: 80%;
+}
+#contact > h1{
+  font-size: 3rem;
+  color: blue;
+  
+}
+#contact > h2{
+  font-size: 4rem;
+  color: gold;
+  font-family: 'Patrick Hand', 'serif';
+}
+#contact > h3{
+  color: white;
+  font-size: 2rem;
+}
+h3 a {
+  text-decoration: none;
+}
+#contact > h4{
+  height: 10vh;
+  text-align: center;
+}
+h4 img{
+  height: 100%;
+  margin-inline: 2rem;
+  cursor: pointer;
+}
+@media (max-width:1100px) {
+  h4 img{
+    width: 3rem;
+    margin-inline: 1rem;
+  }
+}
+/* author section  */
+
+#author{
+  border-top: 2px solid white;
+}
+#author > h1{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Patrick Hand', 'serif';
+}
+#author > h1 span{
+  color: gold;
+  font-size: 5.5rem;
+  font-family: 'Sacramento' ;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 4px gold;
+}
