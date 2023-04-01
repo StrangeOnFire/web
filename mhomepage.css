@@ -87,6 +87,6 @@ h4 img{
     width: 2.5rem;
     margin-inline: 1rem;
   }
-#contact > h3{
+#contact > h3 a{
   font-size: 1rem;
 }
